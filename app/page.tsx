@@ -1,0 +1,46 @@
+import { HeroSection } from "@/components/hero-section"
+import { StatsSection } from "@/components/stats-section"
+import { RiskSection } from "@/components/risk-section"
+import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
+import { AIModelsSection } from "@/components/ai-models-section"
+import { PromptsSection } from "@/components/prompts-section"
+import { TutorialSection } from "@/components/tutorial-section"
+import { securityRisks, qualityRisks, humanRisks } from "@/data/risks"
+
+export default function VibeCodingPage() {
+  return (
+    <div className="min-h-screen bg-background">
+      <Navigation />
+      <main>
+        <HeroSection />
+        <StatsSection />
+        <AIModelsSection />
+        <PromptsSection />
+        <TutorialSection />
+        <RiskSection
+          id="security"
+          title="Риски безопасности"
+          subtitle="Уязвимости и угрозы в ИИ-генерируемом коде"
+          risks={securityRisks}
+          accentColor="destructive"
+        />
+        <RiskSection
+          id="quality"
+          title="Качество кода и техдолг"
+          subtitle="Архитектурные проблемы и накопление технического долга"
+          risks={qualityRisks}
+          accentColor="warning"
+        />
+        <RiskSection
+          id="human"
+          title="Человеческий фактор"
+          subtitle="Риски, связанные с управлением и поведением разработчиков"
+          risks={humanRisks}
+          accentColor="primary"
+        />
+      </main>
+      <Footer />
+    </div>
+  )
+}
