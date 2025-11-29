@@ -54,3 +54,24 @@ export interface TutorialLesson {
   tips: string[]
   codeExample?: string
 }
+
+export interface Course {
+  id: string
+  name: string
+  provider: string
+  description: string
+  duration: string
+  projects: number
+  topics: string[]
+  technologies: string[]
+  price?: string
+  link?: string
+}
+
+export interface RoadmapStep {
+  week: number
+  title: string
+  description: string
+  skills: string[]
+  project?: string
+}

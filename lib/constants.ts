@@ -32,6 +32,7 @@ export const NAV_LINKS = [
   { href: "#models", label: "ИИ-модели" },
   { href: "#prompts", label: "Промпты" },
   { href: "#tutorial", label: "Учебник" },
+  { href: "#courses", label: "Курсы" },
   { href: "#security", label: "Безопасность" },
   { href: "#quality", label: "Качество кода" },
   { href: "#human", label: "Человеческий фактор" },

@@ -6,6 +6,7 @@ import { Footer } from "@/components/footer"
 import { AIModelsSection } from "@/components/ai-models-section"
 import { PromptsSection } from "@/components/prompts-section"
 import { TutorialSection } from "@/components/tutorial-section"
+import { CoursesSection } from "@/components/courses-section"
 import { securityRisks, qualityRisks, humanRisks } from "@/data/risks"
 
 export default function VibeCodingPage() {
@@ -18,6 +19,7 @@ export default function VibeCodingPage() {
         <AIModelsSection />
         <PromptsSection />
         <TutorialSection />
+        <CoursesSection />
         <RiskSection
           id="security"
           title="Риски безопасности"
