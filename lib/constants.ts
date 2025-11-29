@@ -36,4 +36,5 @@ export const NAV_LINKS = [
   { href: "#security", label: "Безопасность" },
   { href: "#quality", label: "Качество кода" },
   { href: "#human", label: "Человеческий фактор" },
+  { href: "#ethical", label: "Этика" },
 ] as const

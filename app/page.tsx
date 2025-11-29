@@ -7,7 +7,7 @@ import { AIModelsSection } from "@/components/ai-models-section"
 import { PromptsSection } from "@/components/prompts-section"
 import { TutorialSection } from "@/components/tutorial-section"
 import { CoursesSection } from "@/components/courses-section"
-import { securityRisks, qualityRisks, humanRisks } from "@/data/risks"
+import { securityRisks, qualityRisks, humanRisks, ethicalRisks } from "@/data/risks"
 
 export default function VibeCodingPage() {
   return (
@@ -40,6 +40,13 @@ export default function VibeCodingPage() {
           subtitle="Риски, связанные с управлением и поведением разработчиков"
           risks={humanRisks}
           accentColor="primary"
+        />
+        <RiskSection
+          id="ethical"
+          title="Этические и общие риски"
+          subtitle="Высокие ставки, авторские права и непредсказуемость ИИ-агентов"
+          risks={ethicalRisks}
+          accentColor="destructive"
         />
       </main>
       <Footer />
